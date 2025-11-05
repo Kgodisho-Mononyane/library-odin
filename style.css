@@ -20,3 +20,11 @@ header {
     justify-content: center;
 }
 /* MAIN */
+#main {
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--background-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
