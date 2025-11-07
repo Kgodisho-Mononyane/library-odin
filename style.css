@@ -2,7 +2,10 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     --background-blue: blue;
+    --background-blue-hover: aqua;
+    --background-blue-active: aquamarine;
     --background-gray: gray;
     --background-white: white;
 }
@@ -27,4 +30,22 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1em;
+}
+
+.btn {
+    height: 3em;
+    width: 5rem;
+    border: none;
+    border-radius: .5em;
+    background-color: var(--background-blue);
+    color: var(--background-white)
+}
+
+.btn:hover {
+    background-color: var(--background-blue-hover);
+}
+
+.btn:active {
+    background-color: var(--background-blue-active);
 }
