@@ -9,6 +9,7 @@ addBtn.addEventListener("click", () => {
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
+    dialogBox.close();
 })
 
 const myLibrary = [];
