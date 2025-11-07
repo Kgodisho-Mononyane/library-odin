@@ -6,12 +6,13 @@
     --background-blue: #1F2937;
     --background-blue-hover: #3f4f66;
     --background-blue-active: #647894;
-    --background-gray: rgb(228, 228, 228);
+    --background-gray: #f0eef1;
     --background-white: white;
-    --positive-green: green;
+    --background-black: black;
+    --positive-green: #9fff9c;
     --positive-green-hover: greenyellow;
     --positive-green-active: lightgreen;
-    --negative-red: red;
+    --negative-red: #ff7070;
     --negative-red-hover: rgb(228, 42, 42);
     --negative-red-hover: rgb(212, 51, 51);
 
@@ -72,7 +73,7 @@ header {
     width: 18.5rem;
     border: none;
     border-radius: 0.3em;
-    background-color: var(--background-white);
+    background-color: var(--background-gray);
 }
 
 .dialog-input {
@@ -81,6 +82,12 @@ header {
     margin: 1em 1em 1em 1em;
     border-radius: 0.4em;
     font-size: 1em;
+    border: none;
+}
+
+#read-checkbox {
+    height: 1.5em;
+    width: 1.5em;
 }
 
 #form {
@@ -92,7 +99,7 @@ header {
 
 #submit-btn {
     background-color: var(--positive-green);
-    color: var(--background-white);
+    color: var(--background-black);
 }
 
 #submit-btn:hover {
