@@ -78,6 +78,11 @@ header {
     background-color: var(--background-gray);
 }
 
+#form-header {
+    margin-top: 0.5em;
+    font-size: 1.7em;
+}
+
 .dialog-input {
     height: 3em;
     width: 80%;
@@ -94,6 +99,10 @@ input:focus {
 #read-checkbox {
     height: 1.5em;
     width: 1.5em;
+}
+
+label {
+    font-size: 1.2em;
 }
 
 #form {
