@@ -72,15 +72,15 @@ header {
     flex-direction: column;
 }
 
-#confirmBtn {
+#submit-btn {
     background-color: var(--positive-green);
     color: var(--background-white);
 }
 
-#confirmBtn:hover {
+#submit-btn:hover {
     background-color: var(--positive-green-hover)
 }
 
-#confirmBtn:active {
+#submit-btn:active {
     background-color: var(--positive-green-active);
 }
