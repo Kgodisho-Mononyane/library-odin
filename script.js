@@ -2,9 +2,11 @@ const addBtn = document.querySelector("#add-btn")
 const container = document.querySelector("#container")
 const dialogBox = document.querySelector("#dialog")
 const submitBtn = document.querySelector("#submit-btn")
+const form = document.querySelector("#form");
 
 addBtn.addEventListener("click", () => {
-    dialogBox.showModal()
+    dialogBox.showModal();
+    form.reset();
     //remove the contents of the inputs from the previous entry
 })
 
