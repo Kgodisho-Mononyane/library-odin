@@ -7,12 +7,23 @@ const form = document.querySelector("#form");
 addBtn.addEventListener("click", () => {
     dialogBox.showModal();
     form.reset();
-    //remove the contents of the inputs from the previous entry
 })
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
     dialogBox.close();
+})
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const title = document.querySelector("#title").value;
+    const author = document.querySelector("#author").value;
+    const pages = document.querySelector("#pages").value;
+    // const read = document.querySelector
+
+    const newBook = new Book(title, author, pages, true)
+    myLibrary.push(newBook)
 })
 
 const myLibrary = [];
@@ -30,5 +41,12 @@ function addBookToLibrary(title, author, pages, read) {
 
 addBookToLibrary("1984", "George Orwell", 295, true);
 addBookToLibrary("The intelligent investor", "Benjamin Graham", 450, false)
+addBookToLibrary("Animal farm", "George Orwell", 240, true)
+
+// function LoopArray(arr) {
+//     arr.forEach(function(elem) {
+//         container.textContent += elem.title;
+//     })
+// }
 
 console.log(myLibrary)
