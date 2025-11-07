@@ -71,6 +71,8 @@ header {
 #dialog {
     height: 25rem;
     width: 18.5rem;
+    top: 20%;
+    left: 40%;
     border: none;
     border-radius: 0.3em;
     background-color: var(--background-gray);
@@ -83,6 +85,10 @@ header {
     border-radius: 0.4em;
     font-size: 1em;
     border: none;
+}
+
+input:focus {
+    outline: none;
 }
 
 #read-checkbox {
