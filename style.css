@@ -8,6 +8,12 @@
     --background-blue-active: #647894;
     --background-gray: rgb(228, 228, 228);
     --background-white: white;
+    --positive-green: green;
+    --positive-green-hover: greenyellow;
+    --positive-green-active: lightgreen;
+    --negative-red: red;
+    --negative-red-hover: rgb(228, 42, 42);
+    --negative-red-hover: rgb(212, 51, 51);
 
     --display: 15vh;
 }
@@ -55,4 +61,26 @@ header {
 
 .btn:active {
     background-color: var(--background-blue-active);
+}
+
+
+
+
+/* DIALOG BOX */
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#confirmBtn {
+    background-color: var(--positive-green);
+    color: var(--background-white);
+}
+
+#confirmBtn:hover {
+    background-color: var(--positive-green-hover)
+}
+
+#confirmBtn:active {
+    background-color: var(--positive-green-active);
 }
