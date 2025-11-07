@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    --background-blue: blue;
-    --background-blue-hover: aqua;
-    --background-blue-active: aquamarine;
-    --background-gray: gray;
+    --background-blue: #1F2937;
+    --background-blue-hover: #3f4f66;
+    --background-blue-active: #647894;
+    --background-gray: rgb(228, 228, 228);
     --background-white: white;
 }
 
@@ -22,6 +22,11 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+#heading {
+    font-size: 2.4em;
+}
+
 /* MAIN */
 #main {
     height: 90vh;
