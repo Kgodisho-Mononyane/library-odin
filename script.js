@@ -24,6 +24,11 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
-function addBookToLibrary() {
-    
+function addBookToLibrary(title, author, pages, read) {
+    myLibrary.push(new Book(title, author, pages, read))
 }
+
+addBookToLibrary("1984", "George Orwell", 295, true);
+addBookToLibrary("The intelligent investor", "Benjamin Graham", 450, false)
+
+console.log(myLibrary)
