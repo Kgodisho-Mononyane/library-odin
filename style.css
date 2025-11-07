@@ -99,6 +99,7 @@ input:focus {
 #read-checkbox {
     height: 1.5em;
     width: 1.5em;
+    accent-color: var(--background-blue);
 }
 
 label {
@@ -113,14 +114,14 @@ label {
 }
 
 #submit-btn {
-    background-color: var(--positive-green);
-    color: var(--background-black);
+    background-color: var(--background-blue);
+    color: var(--background-white);
 }
 
 #submit-btn:hover {
-    background-color: var(--positive-green-hover)
+    background-color: var(--background-blue-hover)
 }
 
 #submit-btn:active {
-    background-color: var(--positive-green-active);
+    background-color: var(--background-blue-active);
 }
