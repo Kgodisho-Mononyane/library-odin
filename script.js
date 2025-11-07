@@ -5,6 +5,7 @@ const submitBtn = document.querySelector("#submit-btn")
 
 addBtn.addEventListener("click", () => {
     dialogBox.showModal()
+    //remove the contents of the inputs from the previous entry
 })
 
 submitBtn.addEventListener("click", (e) => {
@@ -14,8 +15,11 @@ submitBtn.addEventListener("click", (e) => {
 
 const myLibrary = [];
 
-function Book() {
-
+function Book(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
 }
 
 function addBookToLibrary() {
