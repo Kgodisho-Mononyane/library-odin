@@ -74,11 +74,25 @@ header {
     width: 95%;
     overflow: scroll;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: repeat(6, 1fr); 
     gap: var(--spacing)
     /* overflow: ; */
     /* grid-template-rows:; */
 }
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    border-radius: 0.5em;
+}
+
+.book-btn {
+    width: 85%;
+}
+
+
 
 
 /* DIALOG BOX */
