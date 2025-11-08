@@ -14,22 +14,19 @@ addBtn.addEventListener("click", () => {
     form.reset();
 })
 
-submitBtn.addEventListener("submit", (e) => {
+submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
+
+    const titleValue = document.querySelector("#title").value;
+    const authorValue = document.querySelector("#author").value;
+    const pagesValue = document.querySelector("#pages").value;
+    const readValue = document.querySelector("#read-checkbox").value;
+
+    addBookToLibrary(titleValue, authorValue, pagesValue, readValue);
     dialogBox.close();
+    //form.reset() here or addBtn event listener
 })
 
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-
-//     const title = document.querySelector("#title").value;
-//     const author = document.querySelector("#author").value;
-//     const pages = document.querySelector("#pages").value;
-//     // const read = document.querySelector
-
-//     const newBook = new Book(title, author, pages, true)
-//     myLibrary.push(newBook)
-// })
 
 
 //FUNCTIONS
