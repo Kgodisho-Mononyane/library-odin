@@ -14,17 +14,17 @@ submitBtn.addEventListener("click", (e) => {
     dialogBox.close();
 })
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    const title = document.querySelector("#title").value;
-    const author = document.querySelector("#author").value;
-    const pages = document.querySelector("#pages").value;
-    // const read = document.querySelector
+//     const title = document.querySelector("#title").value;
+//     const author = document.querySelector("#author").value;
+//     const pages = document.querySelector("#pages").value;
+//     // const read = document.querySelector
 
-    const newBook = new Book(title, author, pages, true)
-    myLibrary.push(newBook)
-})
+//     const newBook = new Book(title, author, pages, true)
+//     myLibrary.push(newBook)
+// })
 
 const myLibrary = [];
 

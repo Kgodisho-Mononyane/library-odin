@@ -17,6 +17,7 @@
     --negative-red-hover: rgb(212, 51, 51);
 
     --display: 15vh;
+    --spacing: 1.5em;
 }
 
 
@@ -44,7 +45,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5em;
+    padding-top: var(--spacing);
 }
 
 .btn {
@@ -64,7 +65,20 @@ header {
     background-color: var(--background-blue-active);
 }
 
-
+#container {
+    display: grid;
+    border: 3px solid red;
+    margin-top: var(--spacing);
+    margin: 10rem, 10rem, 10rem, 10rem;
+    height: 83%;
+    width: 95%;
+    overflow: scroll;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: var(--spacing)
+    /* overflow: ; */
+    /* grid-template-rows:; */
+}
 
 
 /* DIALOG BOX */
