@@ -14,7 +14,7 @@ addBtn.addEventListener("click", () => {
     form.reset();
 })
 
-submitBtn.addEventListener("click", (e) => {
+submitBtn.addEventListener("submit", (e) => {
     e.preventDefault();
     dialogBox.close();
 })
@@ -41,7 +41,8 @@ function Book(title, author, pages, read) {
 }
 
 function addBookToLibrary(title, author, pages, read) {
-    myLibrary.push(new Book(title, author, pages, read))
+    let book = new Book(title, author, pages, read)
+    myLibrary.push(book);
 }
 
 addBookToLibrary("1984", "George Orwell", 295, true);
