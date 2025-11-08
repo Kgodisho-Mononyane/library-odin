@@ -154,7 +154,7 @@ input:focus {
     outline: none;
 }
 
-#read-checkbox {
+#checkbox {
     height: 1.5em;
     width: 1.5em;
     accent-color: var(--background-blue);

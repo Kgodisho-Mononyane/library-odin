@@ -20,12 +20,17 @@ submitBtn.addEventListener("click", (e) => {
     const titleValue = document.querySelector("#title").value;
     const authorValue = document.querySelector("#author").value;
     const pagesValue = document.querySelector("#pages").value;
-    const readValue = document.querySelector("#read-checkbox").value;
+    let readValue = document.querySelector("#checkbox").checked;
+
+    if (readValue === 'on' || readValue === true) {
+        readValue = true;
+    } else {
+        readValue = false;
+    }
 
     addBookToLibrary(titleValue, authorValue, pagesValue, readValue);
     dialogBox.close();
     console.log(myLibrary)
-    //form.reset() here or addBtn event listener
 })
 
 
@@ -50,7 +55,7 @@ function displayBook() {
         let testElement = document.createElement("p");
         testElement.textContent = `${elem.title}, ${elem.author}, ${elem.pages} pages, ${elem.read}`;
         container.appendChild(testElement);
-    })
+    });
 };
 
 console.log(myLibrary)
