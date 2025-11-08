@@ -67,7 +67,7 @@ header {
 
 #container {
     display: grid;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     margin-top: var(--spacing);
     margin: 10rem, 10rem, 10rem, 10rem;
     height: 83%;
