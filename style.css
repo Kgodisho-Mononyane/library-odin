@@ -72,13 +72,9 @@ header {
     margin: 10rem, 10rem, 10rem, 10rem;
     height: 83%;
     width: 95%;
-    /* overflow: scroll; */
     grid-template-rows: 1fr 1fr;
-    /* grid-template-columns: repeat(6, 1fr);  */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(/*auto-fill*/6, minmax(200px, 1fr));
     gap: var(--spacing)
-    /* overflow: ; */
-    /* grid-template-rows:; */
 }
 
 .book-card {
@@ -87,6 +83,7 @@ header {
     align-items: center;
     background-color: green;
     border-radius: 0.5em;
+    aspect-ratio: 1 / 1;
 }
 
 .book-btn {
