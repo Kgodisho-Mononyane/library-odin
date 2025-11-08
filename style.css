@@ -72,7 +72,7 @@ header {
     margin: 10rem, 10rem, 10rem, 10rem;
     height: 83%;
     width: 95%;
-    overflow: scroll;
+    /* overflow: scroll; */
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(6, 1fr); 
     gap: var(--spacing)
@@ -90,6 +90,36 @@ header {
 
 .book-btn {
     width: 85%;
+    height: 2rem;
+    margin: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+#read-btn {
+    background-color: var(--positive-green);
+    color: var(--background-black);
+}
+
+#read-btn:hover {
+    background-color: var(--positive-green-hover)
+}
+
+#read-btn:active {
+    background-color: var(--positive-green-active)
+}
+
+#remove-btn {
+    background-color: var(--background-blue);
+    color: var(--background-white);
+}
+
+#remove-btn:hover {
+    background-color: var(--background-blue-hover)
+}
+
+#remove-btn:active {
+    background-color: var(--background-blue-active)
 }
 
 
