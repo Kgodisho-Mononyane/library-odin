@@ -52,9 +52,36 @@ function addBookToLibrary(title, author, pages, read) {
 function displayBook() {
     container.innerHTML = "";
     myLibrary.forEach(elem => {
-        let testElement = document.createElement("p");
-        testElement.textContent = `${elem.title}, ${elem.author}, ${elem.pages} pages, ${elem.read}`;
-        container.appendChild(testElement);
+        let newCard = document.createElement("div");
+        newCard.classList.add("book-card");
+        container.appendChild(newCard);
+
+        let newTitle = document.createElement("h1");
+        newTitle.textContent = elem.title;
+        newTitle.classList.add("book-title");
+        newCard.appendChild(newTitle);
+
+        let newAuthor = document.createElement("h2");
+        newAuthor.textContent = elem.author;
+        newAuthor.classList.add("book-author");
+        newCard.appendChild(newAuthor);
+
+        let newPages = document.createElement("h3");
+        newPages.textContent = `${elem.pages} pages`;
+        newPages.classList.add("book-pages");
+        newCard.appendChild(newPages);
+
+        let newRead = document.createElement("button");
+        newRead.classList.add("book-btn");
+        newRead.setAttribute("id", "read-btn");
+        newRead.textContent = "Read"; //make this dynamic
+        newCard.appendChild(newRead);
+
+        let newRemove = document.createElement("button");
+        newRemove.classList.add("book-btn");
+        newRemove.setAttribute("id", "remove-btn");
+        newRemove.textContent = "Remove";
+        newCard.appendChild(newRemove);
     });
 };
 
