@@ -6,7 +6,7 @@
     --background-blue: #1F2937;
     --background-blue-hover: #3f4f66;
     --background-blue-active: #647894;
-    --background-gray: #f0eef1;
+    --background-gray: #dfdde0;
     --background-white: white;
     --background-black: black;
     --positive-green: #9fff9c;
@@ -74,7 +74,8 @@ header {
     width: 95%;
     /* overflow: scroll; */
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(6, 1fr); 
+    /* grid-template-columns: repeat(6, 1fr);  */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: var(--spacing)
     /* overflow: ; */
     /* grid-template-rows:; */
