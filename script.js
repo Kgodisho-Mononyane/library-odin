@@ -1,9 +1,14 @@
+//QUERY SELECTORS & DECLARATIONS
 const addBtn = document.querySelector("#add-btn")
 const container = document.querySelector("#container")
 const dialogBox = document.querySelector("#dialog")
 const submitBtn = document.querySelector("#submit-btn")
 const form = document.querySelector("#form");
 
+const myLibrary = [];
+
+
+//EVENT LISTENERS
 addBtn.addEventListener("click", () => {
     dialogBox.showModal();
     form.reset();
@@ -26,8 +31,8 @@ submitBtn.addEventListener("click", (e) => {
 //     myLibrary.push(newBook)
 // })
 
-const myLibrary = [];
 
+//FUNCTIONS
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
