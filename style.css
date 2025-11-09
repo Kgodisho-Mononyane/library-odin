@@ -67,6 +67,12 @@ header {
     background-color: var(--background-blue-active);
 }
 
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 #container {
     display: grid;
     /* border: 3px solid red; */
