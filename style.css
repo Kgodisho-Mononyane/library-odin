@@ -14,7 +14,7 @@
     --positive-green-active: lightgreen;
     --negative-red: #ff7070;
     --negative-red-hover: rgb(228, 42, 42);
-    --negative-red-hover: rgb(212, 51, 51);
+    --negative-red-active: rgb(190, 68, 68);
 
     --display: 15vh;
     --spacing: 1.5em;
@@ -95,17 +95,32 @@ header {
 }
 
 #read-btn {
-    background-color: var(--positive-green);
     color: var(--background-black);
 }
 
-#read-btn:hover {
+#read-btn.on {
+    background-color: var(--positive-green);
+}
+
+#read-btn.on:hover {
     background-color: var(--positive-green-hover)
 }
 
-#read-btn:active {
+/* #read-btn.on:active {
     background-color: var(--positive-green-active)
+} */
+
+#read-btn.off {
+    background-color: var(--negative-red);
 }
+
+#read-btn.off:hover {
+    background-color: var(--negative-red-hover);
+}
+
+/* #read-btn.off:active {
+    background-color: var(--negative-red-active);
+} */
 
 #remove-btn {
     background-color: var(--background-blue);
