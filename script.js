@@ -4,7 +4,6 @@ const container = document.querySelector("#container")
 const dialogBox = document.querySelector("#dialog")
 const submitBtn = document.querySelector("#submit-btn")
 const form = document.querySelector("#form");
-const removeBtn = document.querySelector("#remove-btn");
 
 const myLibrary = [];
 
@@ -89,9 +88,3 @@ function displayBook() {
         newCard.appendChild(newRemove);
     });
 };
-
-console.log(myLibrary)
-
-removeBtn.addEventListener("click", () => {
-    alert("clicked")
-})
