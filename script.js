@@ -75,6 +75,15 @@ function displayBook() {
             newRead.textContent = "Unread";
             //negative styling
         }
+        newRead.addEventListener("click", () => {
+            if (newRead.textContent == "Read") {
+                newRead.textContent = "Unread";
+                elem.read = false;
+            } else {
+                newRead.textContent = "Read";
+                elem.read = true;
+            }
+        })
         newCard.appendChild(newRead);
 
         let newRemove = document.createElement("button");
