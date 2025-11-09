@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     --background-blue: #1F2937;
     --background-blue-hover: #3f4f66;
     --background-blue-active: #647894;
@@ -16,6 +16,10 @@
 
     --display: 15vh;
     --spacing: 1.5em;
+}
+
+body {
+    min-height: 100vh;
 }
 
 
@@ -37,7 +41,7 @@ header {
 
 /* MAIN */
 #main {
-    height: calc(100vh - (var(--display)));
+    height: 100vh;
     width: 100vw;
     background-color: var(--background-gray);
     display: flex;
