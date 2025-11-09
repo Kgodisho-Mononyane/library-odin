@@ -28,7 +28,6 @@ submitBtn.addEventListener("click", (e) => {
 })
 
 
-
 //FUNCTIONS
 function Book(title, author, pages, read) {
     this.title = title;
@@ -69,7 +68,13 @@ function displayBook() {
         let newRead = document.createElement("button");
         newRead.classList.add("book-btn");
         newRead.setAttribute("id", "read-btn");
-        newRead.textContent = "Read"; //make this dynamic
+        if(elem.read === true) {
+            newRead.textContent = "Read";
+            //positive styling
+        } else {
+            newRead.textContent = "Unread";
+            //negative styling
+        }
         newCard.appendChild(newRead);
 
         let newRemove = document.createElement("button");
