@@ -45,7 +45,7 @@ function addBookToLibrary(title, author, pages, read) {
 
 function displayBook() {
     container.innerHTML = "";
-    myLibrary.forEach(elem => {
+    myLibrary.forEach((elem, index) => {
         let newCard = document.createElement("div");
         newCard.classList.add("book-card");
         container.appendChild(newCard);
@@ -102,7 +102,8 @@ function displayBook() {
             newPages.remove();
             newRead.remove();
             newRemove.remove();
-            //remove array for book
+            myLibrary.splice(index, 1);
+            displayBook();
         })
         newCard.appendChild(newRemove);
     });

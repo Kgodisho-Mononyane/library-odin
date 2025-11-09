@@ -18,9 +18,9 @@
     --spacing: 1.5em;
 }
 
-body {
-    min-height: 100vh;
-}
+/* body {
+    max-height: 100vh;
+} */
 
 
 /* HEADER */
