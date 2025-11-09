@@ -99,18 +99,21 @@ label {
 }
 
 .book-title {
+    color: var(--background-black);
     font-size: clamp(0.7rem, 1.5rem, 2rem);
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .book-author {
+    color: var(--background-blue);
     font-size: clamp(0.8rem, 1.1rem, 1.6rem);
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .book-pages {
+    color: var(--background-blue-hover);
     font-size: clamp(0.5rem, 1rem, 2rem);
     overflow: hidden;
     text-overflow: ellipsis;
