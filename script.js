@@ -22,12 +22,6 @@ submitBtn.addEventListener("click", (e) => {
     const pagesValue = document.querySelector("#pages").value;
     let readValue = document.querySelector("#checkbox").checked;
 
-    if (readValue === 'on' || readValue === true) {
-        readValue = true;
-    } else {
-        readValue = false;
-    }
-
     addBookToLibrary(titleValue, authorValue, pagesValue, readValue);
     dialogBox.close();
     console.log(myLibrary)
@@ -84,6 +78,8 @@ function displayBook() {
         newRemove.textContent = "Remove";
         newRemove.addEventListener("click", () => {
             alert(`remove button clicked`);
+            //remove array for book
+            //remove elements for book
         })
         newCard.appendChild(newRemove);
     });
