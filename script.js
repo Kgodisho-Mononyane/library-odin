@@ -91,9 +91,14 @@ function displayBook() {
         newRemove.setAttribute("id", "remove-btn");
         newRemove.textContent = "Remove";
         newRemove.addEventListener("click", () => {
-            alert(`remove button clicked`);
+            alert(`"${elem.title}'s" remove button was clicked`);
+            newCard.remove();
+            newTitle.remove();
+            newAuthor.remove();
+            newPages.remove();
+            newRead.remove();
+            newRemove.remove();
             //remove array for book
-            //remove elements for book
         })
         newCard.appendChild(newRemove);
     });
