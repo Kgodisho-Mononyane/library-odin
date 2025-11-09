@@ -11,10 +11,8 @@
     --background-black: black;
     --positive-green: #9fff9c;
     --positive-green-hover: greenyellow;
-    --positive-green-active: lightgreen;
     --negative-red: #ff7070;
     --negative-red-hover: rgb(228, 42, 42);
-    --negative-red-active: rgb(190, 68, 68);
 
     --display: 15vh;
     --spacing: 1.5em;
