@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     --background-blue: #1F2937;
     --background-blue-hover: #3f4f66;
     --background-blue-active: #647894;
@@ -17,11 +16,6 @@
     --display: 15vh;
     --spacing: 1.5em;
 }
-
-/* body {
-    max-height: 100vh;
-} */
-
 
 /* HEADER */
 header {
@@ -75,12 +69,11 @@ label {
 
 #container {
     display: grid;
-    /* border: 3px solid red; */
     margin-top: var(--spacing);
     margin: 10rem, 10rem, 10rem, 10rem;
     height: 83%;
     width: 95%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     gap: var(--spacing)
 }
@@ -159,9 +152,6 @@ label {
 #remove-btn:active {
     background-color: var(--background-blue-active)
 }
-
-
-
 
 /* DIALOG BOX */
 #dialog {
