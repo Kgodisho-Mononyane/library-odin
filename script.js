@@ -83,6 +83,9 @@ function displayBook() {
         newRemove.classList.add("book-btn");
         newRemove.setAttribute("id", "remove-btn");
         newRemove.textContent = "Remove";
+        newRemove.addEventListener("click", () => {
+            alert(`remove button clicked`);
+        })
         newCard.appendChild(newRemove);
     });
 };
