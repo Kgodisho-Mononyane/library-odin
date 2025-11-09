@@ -98,17 +98,13 @@ header {
     color: var(--background-black);
 }
 
-#read-btn.on {
+#read-btn {
     background-color: var(--positive-green);
 }
 
-#read-btn.on:hover {
+#read-btn:hover {
     background-color: var(--positive-green-hover)
 }
-
-/* #read-btn.on:active {
-    background-color: var(--positive-green-active)
-} */
 
 #read-btn.off {
     background-color: var(--negative-red);
@@ -117,10 +113,6 @@ header {
 #read-btn.off:hover {
     background-color: var(--negative-red-hover);
 }
-
-/* #read-btn.off:active {
-    background-color: var(--negative-red-active);
-} */
 
 #remove-btn {
     background-color: var(--background-blue);

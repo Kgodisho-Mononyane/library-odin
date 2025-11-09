@@ -70,7 +70,7 @@ function displayBook() {
         newRead.setAttribute("id", "read-btn");
         if(elem.read === true) {
             newRead.textContent = "Read";
-            newRead.classList.toggle("on")
+            newRead.classList.remove("off")
             //positive styling
         } else {
             newRead.textContent = "Unread";
@@ -84,7 +84,7 @@ function displayBook() {
                 elem.read = false;
             } else {
                 newRead.textContent = "Read";
-                newRead.classList.toggle("on")
+                newRead.classList.remove("off")
                 elem.read = true;
             }
         })
