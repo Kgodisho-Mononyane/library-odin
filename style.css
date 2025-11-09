@@ -88,6 +88,28 @@ header {
     aspect-ratio: 1 / 1;
 }
 
+.book-title,.book-author,.book-pages {
+    text-align: center;
+}
+
+.book-title {
+    font-size: clamp(0.7rem, 1.5rem, 2rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-author {
+    font-size: clamp(0.8rem, 1.1rem, 1.6rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-pages {
+    font-size: clamp(0.5rem, 1rem, 2rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .book-btn {
     width: 85%;
     height: 2rem;
