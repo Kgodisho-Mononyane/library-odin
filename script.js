@@ -24,7 +24,6 @@ submitBtn.addEventListener("click", (e) => {
 
     addBookToLibrary(titleValue, authorValue, pagesValue, readValue);
     dialogBox.close();
-    console.log(myLibrary)
 })
 
 
@@ -95,7 +94,6 @@ function displayBook() {
         newRemove.setAttribute("id", "remove-btn");
         newRemove.textContent = "Remove";
         newRemove.addEventListener("click", () => {
-            alert(`"${elem.title}'s" remove button was clicked`);
             newCard.remove();
             newTitle.remove();
             newAuthor.remove();
