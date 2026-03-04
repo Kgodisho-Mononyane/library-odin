@@ -1,9 +1,10 @@
 //QUERY SELECTORS & DECLARATIONS
-const addBtn = document.querySelector("#add-btn")
-const container = document.querySelector("#container")
-const dialogBox = document.querySelector("#dialog")
-const submitBtn = document.querySelector("#submit-btn")
+const addBtn = document.querySelector("#add-btn");
+const container = document.querySelector("#container");
+const dialogBox = document.querySelector("#dialog");
+const submitBtn = document.querySelector("#submit-btn");
 const form = document.querySelector("#form");
+const title = document.querySelector("#title")
 
 const myLibrary = [];
 
@@ -13,6 +14,13 @@ addBtn.addEventListener("click", () => {
     dialogBox.showModal();
     form.reset();
 })
+
+title.addEventListener("input", (e) => {
+    e.target.reportValidity();
+    if(e.target.validity.tooShort) {
+        alert("kgodish")
+    }
+});
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
