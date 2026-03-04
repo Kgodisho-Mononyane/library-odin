@@ -18,7 +18,9 @@ addBtn.addEventListener("click", () => {
 title.addEventListener("input", (e) => {
     e.target.reportValidity();
     if(e.target.validity.tooShort) {
-        alert("kgodish")
+        e.target.setCustomValidity("test");
+    } else {
+        e.target.setCustomValidity("on god");
     }
 });
 
