@@ -188,10 +188,10 @@ input:focus {
     accent-color: var(--background-blue);
 }
 
-#title:invalid, #author:invalid, #pages:invalid {
+/* #title:invalid, #author:invalid, #pages:invalid {
     border: 2px solid red;
     background-color: var(--negative-red-hover);
-} 
+}  */
 
 label {
     font-size: 1.2em;

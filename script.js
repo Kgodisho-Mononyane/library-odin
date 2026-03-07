@@ -4,7 +4,10 @@ const container = document.querySelector("#container");
 const dialogBox = document.querySelector("#dialog");
 const submitBtn = document.querySelector("#submit-btn");
 const form = document.querySelector("#form");
-const title = document.querySelector("#title")
+const title = document.querySelector("#title");
+const author = document.querySelector("#author")
+const pages = document.querySelector("#pages")
+
 
 const myLibrary = [];
 
@@ -15,18 +18,34 @@ addBtn.addEventListener("click", () => {
     form.reset();
 })
 
-title.addEventListener("input", (e) => {
-    e.target.reportValidity();
-    if(e.target.validity.tooShort) {
-        e.target.setCustomValidity("test");
+title.addEventListener("input", () => {
+    if (title.validity.valueMissing) {
+        title.setCustomValidity("Add the book title.");
     } else {
-        e.target.setCustomValidity("on god");
+        title.setCustomValidity("");
     }
+    title.reportValidity();
 });
 
-submitBtn.addEventListener("click", (e) => {
-    e.preventDefault();
+author.addEventListener("input", () => {
+    if (author.validity.valueMissing) {
+        author.setCustomValidity("Add the authors name");
+    } else {
+        author.setCustomValidity("");
+    }
+    author.reportValidity();
+});
 
+pages.addEventListener("input", () => {
+    if (pages.validity.valueMissing) {
+        pages.setCustomValidity("Add the books pages");
+    } else {
+        pages.setCustomValidity("");
+    }
+    pages.reportValidity();
+});
+
+form.addEventListener("submit", () => {
     const titleValue = document.querySelector("#title").value;
     const authorValue = document.querySelector("#author").value;
     const pagesValue = document.querySelector("#pages").value;
